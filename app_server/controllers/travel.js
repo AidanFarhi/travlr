@@ -16,7 +16,7 @@ const travel = async (req, res, next) => {
                 message = 'API lookup error'
                 json = []
             } else {
-                if (!json.length) {
+                if (json.length == 0) {
                     message = 'No trips exist in our database!'
                 }
             }
