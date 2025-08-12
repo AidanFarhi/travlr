@@ -5,6 +5,9 @@ const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const handlebars = require('hbs')
 
+// read environment variables from .env
+require('dotenv').config()
+
 // page routers
 const indexRouter = require('./app_server/routes/index')
 const travelRouter = require('./app_server/routes/travel')
