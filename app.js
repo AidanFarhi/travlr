@@ -4,9 +4,13 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 const handlebars = require('hbs')
+const passport = require('passport')
 
 // read environment variables from .env
 require('dotenv').config()
+
+// wire in authentication module
+require('./app_api/config/passport')
 
 // page routers
 const indexRouter = require('./app_server/routes/index')
@@ -37,14 +41,24 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+app.use(passport.initialize())
+
+// setup static file serving
 app.use(express.static(path.join(__dirname, 'public')))
 
 // enable CORS
 app.use('/api', (req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'http://localhost:4200')
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE')
   next()
+})
+
+// Catch unauthorized error and create 401
+app.use((err, req, res, next) => {
+  if (err.name === 'UnauthorizedError') {
+    res.status(401).json({ message: err.name + ": " + err.message })
+  }
 })
 
 // register the routers
