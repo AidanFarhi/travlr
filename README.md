@@ -4,6 +4,10 @@
 
 - Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).
 
+While developing this project, a couple of different approaches were used to create the front-end layer. For the client facing portion, Express.js was used to handle and process
+requests. The content was displayed using a combination of HTML, CSS, and Handlebars templating to dynamically render pages. Using templating helped to reduce repetitive code
+and enabled breaking up sections of the UI into reusable components that could dynamically be injected with data.
+
 - Why did the backend use a NoSQL MongoDB database?
 
 ## Functionality
@@ -19,3 +23,4 @@
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+
