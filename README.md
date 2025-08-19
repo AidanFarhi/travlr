@@ -24,8 +24,14 @@ Its document-oriented data format is also almost identical to JSON, which is the
 JSON, which stands for JavaScript Object Notation, is a data serialization format commonly used to transfer data between services on the web.
 It is based on the way objects are structed in JavaScript.
 JavaScript is a programming language that runs in most browsers as well as on back-end servers via Node.js.
+The backend portion of the application was built with JavaScript.
+One of the components of the backend is a REST API that responds to requests with JSON data.
+When the frontend layer made requests to the API, it recieved the JSON response, and used it to dynamically render markup to the user.
 
 - Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
+
+At the start of the project, all of the UI elements were split into several HTML files. Within the HTML, there were repetitive sections of code, such as the header, footer, and card elements.
+These HTML files were refactored into Handlebars template files. This enabled re-use of common components and reduced the total amount of code required to display content.
 
 ## Testing
 
@@ -34,6 +40,7 @@ JavaScript is a programming language that runs in most browsers as well as on ba
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+
 
 
 
