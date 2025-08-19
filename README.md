@@ -14,11 +14,16 @@ trips from the API layer. Once the trip data was retrieved, Angular specific dir
 
 - Why did the backend use a NoSQL MongoDB database?
 
-Cuz MongoDB is kool.
+MongoDB was chosen as the database for the application. Some of the highlights of MongoDB are its flexable schema, horizontal scalability, and available ODMs like Mongoose.
+Its document-oriented data format is also almost identical to JSON, which is the primary data serialization format of most REST APIs.
 
 ## Functionality
 
 - How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
+
+JSON, which stands for JavaScript Object Notation, is a data serialization format commonly used to transfer data between services on the web.
+It is based on the way objects are structed in JavaScript.
+JavaScript is a programming language that runs in most browsers as well as on back-end servers via Node.js.
 
 - Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
 
@@ -29,5 +34,6 @@ Cuz MongoDB is kool.
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+
 
 
