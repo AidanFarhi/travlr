@@ -14,7 +14,7 @@ trips from the API layer. Once the trip data was retrieved, Angular specific dir
 
 - Why did the backend use a NoSQL MongoDB database?
 
-MongoDB was chosen as the database for the application. Some of the highlights of MongoDB are its flexable schema, horizontal scalability, and available ODMs like Mongoose.
+MongoDB was chosen as the database for the application. Some of the highlights of MongoDB are its flexible schema, horizontal scalability, and available ODMs like Mongoose.
 Its document-oriented data format is also almost identical to JSON, which is the primary data serialization format of most REST APIs.
 
 ## Functionality
@@ -22,11 +22,11 @@ Its document-oriented data format is also almost identical to JSON, which is the
 - How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
 
 JSON, which stands for JavaScript Object Notation, is a data serialization format commonly used to transfer data between services on the web.
-It is based on the way objects are structed in JavaScript.
+It is based on the way objects are structured in JavaScript.
 JavaScript is a programming language that runs in most browsers as well as on back-end servers via Node.js.
 The backend portion of the application was built with JavaScript.
 One of the components of the backend is a REST API that responds to requests with JSON data.
-When the frontend layer made requests to the API, it recieved the JSON response, and used it to dynamically render markup to the user.
+When the frontend layer made requests to the API, it received the JSON response, and used it to dynamically render markup to the user.
 
 - Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
 
@@ -54,10 +54,13 @@ In the travlr project, this was handled using JWT tokens. All endpoints related 
 If it was not present, the operation would not be allowed. This was the *authorization* layer.
 In order to obtain a valid JWT, a user would have to submit a `POST /login` request with their credentials. The server then validates the credentials.
 If the credentials are valid, a JWT is generated and issued back to the client to be used in subsequent requests.
-This constitiutes the *authorization* layer.
+This constitutes the *authorization* layer.
 
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
 
-
+My goal is to become a well-rounded software engineer capable of leveraging a vast toolbelt of languages, frameworks, and design philosophies.
+Building a full-stack application from the ground up was a rewarding experience. I found it enrichening to use Angular for the first time as well as Node, Express, and Handlebars.
+By walking through different ways to build applications, I have the oppurtunity to develop skills relevent to the modern job market and obtain a solid foundation
+in engineering practices.
