@@ -41,7 +41,7 @@ Virtually all applications on the modern web communicate via the HTTPS (a secure
 their browser will issue a `GET` request for that resource via the internet using this protocol. Once the IP address for the server has been found via DNS, the hosting computer will response with an HTML page
 containing a bunch of cat photos.
 `GET` is one of the commonly used HTTP methods. It used to request resources from a server.
-There are methods which are used by a client talking to a server signifying what they would like to do.
+There are other methods which are used by a client talking to a server signifying what they would like to do.
 This includes `POST` to submit data to a server, `PUT` which updates data, and `DELETE` which removes information.
 
 Many applications are broken into front-end and back-end layers. The back-end layer typically exposes several endpoints over HTTPS. Each endpoint represents
@@ -59,4 +59,5 @@ This constitiutes the *authorization* layer.
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+
 
