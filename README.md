@@ -60,8 +60,5 @@ This constitutes the *authorization* layer.
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
 
-My goal is to become a well-rounded software engineer capable of leveraging a vast toolbelt of languages, frameworks, and design philosophies.
-Building a full-stack application from the ground up was a rewarding experience. I found it enrichening to use Angular for the first time as well as Node, Express, and Handlebars.
-By walking through different ways to build applications, I have the oppurtunity to develop skills relevent to the modern job market and obtain a solid foundation
-in engineering practices.
+My goal is to become a well-rounded software engineer capable of leveraging a vast toolbelt of languages, frameworks, and design philosophies. Building a full-stack application from the ground up was a rewarding experience. I found it enrichening to use Angular for the first time as well as Node, Express, and Handlebars. By walking through different ways to build applications, I have the opportunity to develop skills relevant to the modern job market and obtain a solid foundation in engineering practices.
 
