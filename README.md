@@ -21,7 +21,7 @@ Its document-oriented data format is also almost identical to JSON, which is the
 
 - How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
 
-JSON, which stands for JavaScript Object Notation, is a data serialization format commonly used to transfer data between services on the web.
+JSON, which stands for JavaScript Object Notation, is a data serialization format commonly used to transfer data between servers on the web.
 It is based on the way objects are structured in JavaScript.
 JavaScript is a programming language that runs in most browsers as well as on back-end servers via Node.js.
 The backend portion of the application was built with JavaScript.
@@ -64,3 +64,4 @@ My goal is to become a well-rounded software engineer capable of leveraging a va
 Building a full-stack application from the ground up was a rewarding experience. I found it enrichening to use Angular for the first time as well as Node, Express, and Handlebars.
 By walking through different ways to build applications, I have the oppurtunity to develop skills relevent to the modern job market and obtain a solid foundation
 in engineering practices.
+
