@@ -37,10 +37,26 @@ These HTML files were refactored into Handlebars template files. This enabled re
 
 - Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.
 
+Virtually all applications on the modern web communicate via the HTTPS (a secure version of HTTP) protocol. When a person browsing the web types in `www.catphotos.com` and hits enter,
+their browser will issue a `GET` request for that resource via the internet using this protocol. Once the IP address for the server has been found via DNS, the hosting computer will response with an HTML page
+containing a bunch of cat photos.
+`GET` is one of the commonly used HTTP methods. It used to request resources from a server.
+There are methods which are used by a client talking to a server signifying what they would like to do.
+This includes `POST` to submit data to a server, `PUT` which updates data, and `DELETE` which removes information.
+
+Many applications are broken into front-end and back-end layers. The back-end layer typically exposes several endpoints over HTTPS. Each endpoint represents
+a specific request or operation. For example, within the travlr project, there were a series of endpoints related to trip information.
+If a `GET /trips` request is recieved by the back-end, it responds with a JSON serialized list of objects. There is also a method for registering new users, which uses
+the `POST /register` endpoint.
+
+Endpoints that manipulate data or contain sensitive information are typcially secured to limit access. A common way to do this is to add some sort of *authentication* and *authorization* mechanism.
+In the travlr project, this was handled using JWT tokens. All endpoints related to updating or creating trips required a valid JWT token to be present in the request.
+If it was not present, the operation would not be allowed. This was the *authorization* layer.
+In order to obtain a valid JWT, a user would have to submit a `POST /login` request with their credentials. The server then validates the credentials.
+If the credentials are valid, a JWT is generated and issued back to the client to be used in subsequent requests.
+This constitiutes the *authorization* layer.
+
 ## Reflection
 
 - How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
-
-
-
 
